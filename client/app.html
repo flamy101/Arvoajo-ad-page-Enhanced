@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autokoulu ArvoAjo-compaign</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+<h1 class="header" id="header">
+    ArvoAjon autokoulussa on <br>
+    käynnissä jatkuva kampanja!
+</h1>
+
+<div class="topBar">
+    <img src="Util/calendar.png" alt="" class="calendarBtn" id="calendarBtn">
+    <div class="langBtns" id="langBtns">
+        <button class="fiBtn" id="fiBtn">FI</button>
+        <button class="enBtn" id="enBtn">EN</button>
+        <button class="ruBtn" id="ruBtn">RU</button>
+    </div>
+</div>
+<!-- ----------------CALENDAR--------------------- -->
+
+<div class="calendarContainer" id="calendarContainer">
+    <div class="calendar-header">
+        <button class="prew" id="prew">&lt;</button>
+        <span class="yearMonth" id="yearMonth"></span>
+        <button class="next" id="next">&gt;</button>
+    </div>
+
+    <div class="calendar" id="calendar"></div>
+</div>
+<!-- ----------------PAGE--------------------- -->
+<div class="main-section">
+    <div class="text-block">
+        <div class="text-paragraphs">
+            <p class="text_1" id="text_1">
+                Jos läpäiset teoria-ajokokeen ilman <br>
+                yhtään virhettä, saat meiltä <span style="color:rgb(111, 0, 0);">200 €</span> <br>
+                Jos teet yhden virheen, saat silti <span style="color:rgb(111, 0, 0);">100 €</span>
+            </p>
+
+            <p class="text_2" id="text_2">
+                Ilmoittaudu, suorita koe mahdollisimman<br>
+                vähän virheitä ja saat mukavan lahjan!
+            </p>
+
+            <a href="https://autokoulu-arvoajo.fi" class="url" id="url">https://autokoulu-arvoajo.fi</a>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="Util/image.png" alt="" id="sideImage">
+
+        <button onclick="window.location.href='https://autokoulu-arvoajo.fi/yhteystiedot/#rec773055061'" class="urlBtn" id="urlBtn">ILMOITTAUDU</button>
+    </div>
+</div>
+
+
+
+
+    <script src="index.js"></script>
+    <script src="calendar/calendar.js"></script>
+</body>
+</html>
