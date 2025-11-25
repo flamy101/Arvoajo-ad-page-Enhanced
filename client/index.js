@@ -1,6 +1,23 @@
 const header = document.getElementById('header');
 const text_1 = document.getElementById('text_1');
 const text_2 = document.getElementById('text_2');
+const toggleBtn = document.getElementById('dark_lightModeBtn');
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+    const calendarBtn = document.getElementById('calendarBtn');
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        toggleBtn.src = "Util/dark-mode-off.png";
+        calendarBtn.src = "Util/calendar-dark.png"
+    } else {
+        toggleBtn.src = "Util/dark-mode-on.png"
+        calendarBtn.src = "Util/calendar-light.png"
+    }
+
+
+})
 
 const buttons = {
     fi: document.getElementById('fiBtn'),
